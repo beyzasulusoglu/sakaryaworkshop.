@@ -1,0 +1,50 @@
+/* =========================================================
+   TASARIM DEĞİŞKENLERİ
+   Renkleri, yazı tiplerini ve boşlukları buradan değiştirin.
+   ========================================================= */
+
+:root {
+  /* --- Zemin ve metin --- */
+  --color-bg:        #FBF8F3;  /* kırık beyaz — ana zemin */
+  --color-surface:   #FFFFFF;  /* saf beyaz yüzeyler */
+  --color-cream:     #F5EFE6;  /* çok açık krem — ayrık bölümler */
+  --color-ink:       #2B2622;  /* ana metin (sıcak koyu) */
+  --color-ink-soft:  #6B625A;  /* ikincil metin */
+  --color-line:      #E6DED2;  /* ince çizgiler */
+
+  /* --- Pastel dokunuşlar --- */
+  --color-rose:      #F2D4D7;  /* soft pembe */
+  --color-powder:    #F6E4DF;  /* pudra */
+  --color-lilac:     #E2DCEF;  /* açık lila */
+  --color-butter:    #F6E9BF;  /* pastel sarı */
+  --color-peach:     #F7D9C4;  /* soft şeftali */
+  --color-sky:       #D8E5EF;  /* açık mavi */
+
+  /* Butonlar ve vurgu */
+  --color-accent:      #2B2622;
+  --color-accent-text: #FBF8F3;
+
+  /* --- Yazı tipleri --- */
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  --font-body:    "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Akışkan (responsive) yazı boyutları: min, ekran oranı, max */
+  --fs-hero:    clamp(3.2rem, 9.5vw, 7.75rem);
+  --fs-h2:      clamp(2.1rem, 4.6vw, 3.6rem);
+  --fs-h3:      clamp(1.9rem, 4.2vw, 3.25rem);
+  --fs-lead:    clamp(1.05rem, 1.4vw, 1.2rem);
+  --fs-body:    1rem;
+  --fs-small:   0.8125rem;
+
+  /* --- Ölçüler --- */
+  --container:    1200px;
+  --gutter:       clamp(1rem, 4vw, 2.5rem);   /* kenar boşluğu */
+  --section-y:    clamp(4.5rem, 10vw, 8.5rem); /* bölüm dikey boşluğu */
+  --header-h:     64px;
+  --radius:       4px;  /* kasıtlı olarak küçük — kart görünümünden kaçınmak için */
+
+  /* --- Hareket --- */
+  --ease:         cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-slow:     900ms;
+  --dur:          500ms;
+}

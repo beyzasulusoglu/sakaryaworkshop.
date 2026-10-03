@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakarya Workshop — Seramik, Tablo, Pasta ve Çiçek Atölyeleri</title>
+  <meta name="description" content="Sakarya Workshop: seramik, tablo, pasta ve çiçek buketi atölyeleri. Üretmenin, keşfetmenin ve birlikte güzel şeyler yapmanın en keyifli hali.">
+  <meta name="theme-color" content="#FBF8F3">
+
+  <!-- Yazı tipleri: Fraunces (başlıklar) + DM Sans (metinler) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Stiller: önce değişkenler, sonra temel, sonra bölümler -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#hakkimizda">İçeriğe geç</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="wordmark" aria-label="Sakarya Workshop ana sayfa">
+        <span class="wordmark-main">Sakarya</span><span class="wordmark-sub">Workshop</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#workshoplar">Workshoplar</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <!-- Sadece mobil menüde görünen alt bilgi -->
+        <p class="nav-footnote">
+          <a data-contact="instagram" data-contact-text href="https://www.instagram.com/sakaryaworkshop/">@sakaryaworkshop</a>
+        </p>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menüyü aç">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow load-in">Seramik · Tablo · Pasta · Çiçek</p>
+          <h1 class="hero-title load-in">
+            Sakarya<br><em>Workshop</em>
+          </h1>
+          <p class="hero-lead load-in">
+            Üretmenin, keşfetmenin ve birlikte güzel şeyler yapmanın en keyifli hali.
+          </p>
+          <div class="hero-actions load-in">
+            <a href="#workshoplar" class="btn btn-primary">Workshopları Keşfet</a>
+            <a href="#iletisim" class="link-underline">Bize ulaşın</a>
+          </div>
+        </div>
+
+        <!-- Editorial görsel kompozisyonu: bir ana görsel + iki küçük detay -->
+        <div class="hero-visual load-in" aria-hidden="false">
+          <figure class="hv hv-main">
+            <img src="images/hero/hero-main.jpg" width="736" height="981"
+                 alt="Pastel çiçeklerle hazırlanmış çiçek atölyesi masası" fetchpriority="high">
+          </figure>
+          <figure class="hv hv-small hv-a">
+            <img src="images/hero/hero-detail-1.jpg" width="721" height="900"
+                 alt="Elle şekillendirilen seramik kase">
+          </figure>
+          <figure class="hv hv-small hv-b">
+            <img src="images/hero/hero-detail-2.jpg" width="506" height="900"
+                 alt="Kremayla kaplanan pasta ve pembe güller">
+          </figure>
+
+          <!-- Küçük el çizimi çiçek -->
+          <svg class="doodle doodle-flower" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M32 30c-4-9-1-17 0-18 1 1 4 9 0 18z"/>
+              <path d="M34 32c9-4 17-1 18 0-1 1-9 4-18 0z"/>
+              <path d="M32 34c4 9 1 17 0 18-1-1-4-9 0-18z"/>
+              <path d="M30 32c-9 4-17 1-18 0 1-1 9-4 18 0z"/>
+              <circle cx="32" cy="32" r="2.2"/>
+            </g>
+          </svg>
+          <p class="hero-caption">Her ay yeni masalar,<br>yeni eller, yeni hikâyeler.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HAKKIMIZDA ============ -->
+    <section class="about section" id="hakkimizda">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <figure class="about-img about-img-1">
+            <img src="images/about/about-1.jpg" width="675" height="1200" loading="lazy" decoding="async"
+                 alt="Pembe önlüklerle çiçek aranjmanı yapan katılımcılar">
+          </figure>
+          <figure class="about-img about-img-2">
+            <img src="images/about/about-2.jpg" width="675" height="900" loading="lazy" decoding="async"
+                 alt="Kafe ortamında tablo boyayan ve kahve içen katılımcılar">
+          </figure>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow">Hakkımızda</p>
+          <h2 class="section-title">
+            Bir masa, birkaç malzeme<br>ve <em>bolca</em> vakit.
+          </h2>
+          <p>
+            Sakarya Workshop, elleriyle bir şey üretmeyi seven herkes için kuruldu.
+            Seramikten pastaya, tablodan çiçek buketine kadar her atölyede
+            amacımız aynı: yeni bir şey öğrenmek, acele etmeden üretmek
+            ve masadan güzel bir anıyla kalkmak.
+          </p>
+          <p>
+            Deneyim gerekmez. Malzemeleri biz hazırlarız, size yalnızca
+            gelmek ve keyfini çıkarmak kalır. Arkadaşlarınızla, sevdiğinizle
+            ya da tek başınıza — masamızda herkese yer var.
+          </p>
+
+          <ul class="about-points">
+            <li><span class="dot dot-peach"></span>Yaratıcı üretim</li>
+            <li><span class="dot dot-lilac"></span>Birlikte vakit</li>
+            <li><span class="dot dot-rose"></span>Yeni beceriler</li>
+            <li><span class="dot dot-butter"></span>Keyifli deneyimler</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORKSHOPLAR ============ -->
+    <section class="workshops section" id="workshoplar">
+      <div class="container">
+        <div class="workshops-head reveal">
+          <p class="eyebrow">Workshoplar</p>
+          <h2 class="section-title">Dört atölye,<br><em>tek masa.</em></h2>
+          <p class="workshops-intro">
+            Her atölye yaklaşık 2–3 saat sürer. Tüm malzemeler, ikramlar ve
+            eve götüreceğiniz eseriniz dahildir.
+          </p>
+          <!-- Organik el çizimi çizgi -->
+          <svg class="doodle doodle-line" viewBox="0 0 220 24" aria-hidden="true">
+            <path d="M2 14c18-10 34-10 50 0s34 10 50 0 34-10 50 0 34 10 50 0 14-6 16-5"
+                  fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!--
+          Her workshop bir "satır". Renk dokunuşu data-accent ile belirlenir
+          (seçenekler: peach, sky, rose, lilac — css/variables.css içinde).
+        -->
+        <ol class="workshop-list">
+          <li class="workshop reveal" data-accent="peach">
+            <span class="workshop-no">01</span>
+            <h3 class="workshop-name">Seramik</h3>
+            <div class="workshop-body">
+              <p>Seramik üretme ve şekillendirme deneyimi. Çamuru elinizde hissedin; kendi kasenizi, kupanızı ya da tabağınızı şekillendirip boyayın.</p>
+              <p class="workshop-meta">~3 saat · Pişirim sonrası teslim</p>
+            </div>
+            <figure class="workshop-img">
+              <img src="images/workshops/seramik.jpg" width="720" height="900" loading="lazy" decoding="async"
+                   alt="Kalp şeklinde seramik kase şekillendiren eller">
+            </figure>
+          </li>
+
+          <li class="workshop reveal" data-accent="sky">
+            <span class="workshop-no">02</span>
+            <h3 class="workshop-name">Tablo</h3>
+            <div class="workshop-body">
+              <p>Kendi tablonu oluşturabileceğin yaratıcı resim deneyimi. Doku, renk ve fırça darbeleriyle tuvalinize kendi hikâyenizi işleyin.</p>
+              <p class="workshop-meta">~2,5 saat · Tuval ve şövale dahil</p>
+            </div>
+            <figure class="workshop-img">
+              <img src="images/workshops/tablo.jpg" width="506" height="900" loading="lazy" decoding="async"
+                   alt="Şövale üzerinde dokulu pembe şakayık tablosu">
+            </figure>
+          </li>
+
+          <li class="workshop reveal" data-accent="rose">
+            <span class="workshop-no">03</span>
+            <h3 class="workshop-name">Pasta</h3>
+            <div class="workshop-body">
+              <p>Pasta yapımı ve süslemesine odaklanan eğlenceli workshop. Krema kıvamından sıkma tekniklerine kadar kendi mini pastanızı tasarlayın.</p>
+              <p class="workshop-meta">~2 saat · Pastanız kutusunda sizinle</p>
+            </div>
+            <figure class="workshop-img">
+              <img src="images/workshops/pasta.jpg" width="675" height="900" loading="lazy" decoding="async"
+                   alt="Pastel renklerle süslenmiş bento pastalar">
+            </figure>
+          </li>
+
+          <li class="workshop reveal" data-accent="lilac">
+            <span class="workshop-no">04</span>
+            <h3 class="workshop-name">Çiçek Buketi</h3>
+            <div class="workshop-body">
+              <p>Kendi çiçek buketini tasarlayabileceğin yaratıcı deneyim. Mevsim çiçeklerini seçin, renkleri dengeleyin ve buketinizi kendiniz bağlayın.</p>
+              <p class="workshop-meta">~2 saat · Mevsim çiçekleri dahil</p>
+            </div>
+            <figure class="workshop-img">
+              <img src="images/workshops/cicek.jpg" width="720" height="900" loading="lazy" decoding="async"
+                   alt="Gül ve okaliptüsle buket hazırlayan katılımcılar">
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ GALERİ ============ -->
+    <!--
+      Galeri görselleri: images/gallery/galeri-01.jpg ... galeri-12.jpg
+      Kendi fotoğraflarınızı aynı isimlerle kaydedip üzerine yazmanız yeterli.
+      Hangi boyutta olursa olsun CSS kare olarak kırpar (object-fit: cover).
+    -->
+    <section class="gallery section" id="galeri">
+      <div class="container">
+        <div class="gallery-head reveal">
+          <h2 class="section-title">Masadan<br><em>kareler</em></h2>
+          <p class="gallery-note">
+            Atölyelerimizden anlar. Daha fazlası için
+            <a data-contact="instagram" href="https://www.instagram.com/sakaryaworkshop/" class="link-underline">Instagram</a>.
+          </p>
+        </div>
+
+        <ul class="gallery-grid reveal">
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-01.jpg" loading="lazy" decoding="async" alt="Seramik kase şekillendirme"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-02.jpg" loading="lazy" decoding="async" alt="Pastel çiçeklerle hazırlanmış atölye masası"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-03.jpg" loading="lazy" decoding="async" alt="Pasta süsleme atölyesinden bir an"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-04.jpg" loading="lazy" decoding="async" alt="Akşam resim atölyesi"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-05.jpg" loading="lazy" decoding="async" alt="Boyanmış seramik tabaklar"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-06.jpg" loading="lazy" decoding="async" alt="Buket hazırlayan katılımcılar"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-07.jpg" loading="lazy" decoding="async" alt="Süslenmiş bento pastalar"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-08.jpg" loading="lazy" decoding="async" alt="Şakayık tablosu"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-09.jpg" loading="lazy" decoding="async" alt="Çiçek atölyesinden yukarıdan görünüm"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-10.jpg" loading="lazy" decoding="async" alt="Kalp şeklinde seramik kase"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-11.jpg" loading="lazy" decoding="async" alt="Pasta atölyesi masası"></button></li>
+          <li><button class="g-item" type="button"><img src="images/gallery/galeri-12.jpg" loading="lazy" decoding="async" alt="Açık havada kolaj atölyesi masası"></button></li>
+        </ul>
+      </div>
+
+      <!-- Görsele tıklanınca açılan sade büyütme penceresi -->
+      <dialog class="lightbox" aria-label="Galeri görseli">
+        <button class="lb-close" type="button" aria-label="Kapat">Kapat</button>
+        <button class="lb-nav lb-prev" type="button" aria-label="Önceki görsel">←</button>
+        <img class="lb-img" src="" alt="">
+        <button class="lb-nav lb-next" type="button" aria-label="Sonraki görsel">→</button>
+      </dialog>
+    </section>
+
+    <!-- ============ İLETİŞİM ============ -->
+    <!--
+      İletişim bilgilerini değiştirmek için: js/config.js
+      (Aşağıdaki metinler JavaScript kapalıyken görünen yedek değerlerdir.)
+    -->
+    <section class="contact section" id="iletisim">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">İletişim</p>
+          <h2 class="contact-title">Birlikte üretmeye<br><em>hazır mısın?</em></h2>
+          <p>
+            Takvim, grup etkinlikleri ve özel günler için bize yazın.
+            Doğum günü, bekârlığa veda ya da şirket etkinliği — masayı sizin için kurarız.
+          </p>
+          <div class="contact-actions">
+            <a data-contact="whatsapp" href="https://wa.me/905550000000" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp’tan yaz</a>
+            <a data-contact="instagram" href="https://www.instagram.com/sakaryaworkshop/" class="btn btn-ghost" target="_blank" rel="noopener">Instagram</a>
+            <a data-contact="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Serdivan%2C%20Sakarya" class="btn btn-ghost btn-icon" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+              Yol tarifi al
+            </a>
+          </div>
+        </div>
+
+        <dl class="contact-list reveal">
+          <div class="contact-row">
+            <dt>Telefon</dt>
+            <dd><a data-contact="phone" data-contact-text href="tel:+905550000000">0555 XXX XX XX</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>WhatsApp</dt>
+            <dd><a data-contact="whatsapp" data-contact-text="phone" href="https://wa.me/905550000000" target="_blank" rel="noopener">0555 XXX XX XX</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Instagram</dt>
+            <dd><a data-contact="instagram" data-contact-text href="https://www.instagram.com/sakaryaworkshop/" target="_blank" rel="noopener">@sakaryaworkshop</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>E-posta</dt>
+            <dd><a data-contact="email" data-contact-text href="mailto:merhaba@sakaryaworkshop.com">merhaba@sakaryaworkshop.com</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Konum</dt>
+            <dd><a data-contact="maps" data-contact-text="address" href="https://www.google.com/maps/search/?api=1&amp;query=Serdivan%2C%20Sakarya" target="_blank" rel="noopener">Serdivan, Sakarya</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-mark">Sakarya Workshop</span>
+      <span class="footer-copy">© <span data-year>2026</span> Sakarya Workshop</span>
+      <a data-contact="instagram" href="https://www.instagram.com/sakaryaworkshop/" target="_blank" rel="noopener" class="link-underline">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- ============ HIZLI İLETİŞİM (sağ altta sabit) ============
+       Bağlantılar js/config.js'ten otomatik doldurulur. -->
+  <nav class="quick-contact" aria-label="Hızlı iletişim">
+    <a class="qc-btn" data-contact="whatsapp" href="https://wa.me/905550000000" target="_blank" rel="noopener" aria-label="WhatsApp'tan yaz">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 19.5l1.1-3.6A8 8 0 1 1 8.3 18.6z"/><path d="M9.2 8.6c.2-.5.6-.6.9-.6h.4l.9 2.1-.6.8c.4.9 1.3 1.8 2.3 2.3l.8-.6 2.1.9v.4c0 .3-.1.7-.6.9-.6.3-1.6.4-3.2-.5a8 8 0 0 1-2.6-2.6c-.9-1.6-.8-2.6-.4-3.1z" class="fill"/></svg>
+      <span class="qc-label">WhatsApp</span>
+    </a>
+    <a class="qc-btn" data-contact="instagram" href="https://www.instagram.com/sakaryaworkshop/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".6" class="fill"/></svg>
+      <span class="qc-label">Instagram</span>
+    </a>
+    <a class="qc-btn" data-contact="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Serdivan%2C%20Sakarya" target="_blank" rel="noopener" aria-label="Google Maps'te yol tarifi al">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+      <span class="qc-label">Yol tarifi</span>
+    </a>
+  </nav>
+
+  <!-- Önce ayarlar, sonra ana script -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
